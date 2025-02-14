@@ -38,13 +38,14 @@ async function fraseKanye () {
         const resp = await fetch(url);
 
         if (!resp.ok) {
-            alert(`STATUS: ${resp.status}`); // Mover o alert para antes do throw
+            alert(`STATUS: ${resp.status}`); 
             throw new Error(`Erro na requisição! Status: ${resp.status}`);
         }
 
         const dados = await resp.json();
 
         frases.textContent = dados.quote;
+        
     } catch (err) {
         console.error('Erro:', err);
         alert('Erro ao buscar frase. Tente novamente mais tarde!');

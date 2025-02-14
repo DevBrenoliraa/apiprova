@@ -5,7 +5,10 @@ const url = "https://api.thedogapi.com/v1/images/search";
 const img = document.getElementById("imgdog"); 
 
 // Busca o botão no HTML com o id 'btn', que ao ser clicado vai disparar a função 'buscarAPI'
-const botao = document.getElementById("btn"); 
+const botao = document.getElementById("btn");
+
+// Adiciona um evento ao botão, para que, ao ser clicado, execute a função 'buscarAPI'
+botao.addEventListener("click", buscarAPI); 
 
 // Função assíncrona que busca a imagem de cachorro da API
 async function buscarAPI() {
@@ -24,8 +27,7 @@ async function buscarAPI() {
     img.alt = "Imagem de um cachorro fofo"; 
 }
 
-// Adiciona um evento ao botão, para que, ao ser clicado, execute a função 'buscarAPI'
-botao.addEventListener("click", buscarAPI);
+
 
 // Chama a função automaticamente ao carregar a página para exibir uma imagem de cachorro
 buscarAPI();
