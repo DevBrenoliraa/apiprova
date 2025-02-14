@@ -21,7 +21,7 @@
         };
 
         const init = {
-            method: 'POST',
+            method: 'PUT',
             headers: headers,
             body: JSON.stringify ({
                 title: 'Testede criação'
