@@ -1,0 +1,49 @@
+* { /*Reset global para remover margens e paddings*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: blanchedalmond;
+    /* INÍCIO DO FLEX-BOX */
+    display: flex; /*centralizar o conteúdo com o flex*/
+    justify-content: center; /*centraliza o elemento na horizontal*/
+    align-items: center; /*centraliza o elemento na vertical*/
+    min-height: 100vh; /*altura minima do tamanho da telade visualização*/
+}
+
+div[one] {
+    background-color: #fff;
+    padding: 25px; /*Preenchimento interno da div*/
+    border-radius: 15px; /*Arredondamento das bordas*/
+    display: flex; /*centralizar o conteúdo com o flex*/
+    flex-direction: column; /*modo de layout horizontal - colunas*/
+    gap: 15px; /*separação entre os elementos*/
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /*sombra do elemento*/
+}
+
+#carta {
+    max-width: auto; /*largura máxima da img*/
+    max-height: auto; /*altura máxima da img*/
+    object-fit: cover; /*ajusta a img para preencher o conteúdo da div*/
+    margin: 0 auto; /*centraliza a img na div*/
+    border-radius: 12px;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1); /*sombra do elemento*/
+}
+
+#btn {
+    background-color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
+    font-weight: 800; /*espessura da fonte*/
+    padding: 10px 25px; /*Espaçamento dentro do botão*/
+    border: none; /*retira a borda do botão*/
+    border-radius: 5px;
+    cursor: pointer; /*transforma o cursor numa mãozinha ao passar no item*/
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+#btn:hover {
+    background-color: rgb(224, 121, 2);
+    transform: scale(1.05);
+}
