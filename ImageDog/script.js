@@ -12,7 +12,6 @@ botao.addEventListener("click", buscarAPI);
 
 // Função assíncrona que busca a imagem de cachorro da API
 async function buscarAPI() {
-    fetch(url); // Inicia a requisição para a API (mas essa linha não faz nada útil aqui)
 
     // Aguardamos a resposta da API (requisição fetch) e armazenamos a resposta em 'resposta'
     const resposta = await fetch(url); 
